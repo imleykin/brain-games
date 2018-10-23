@@ -1,0 +1,25 @@
+{
+  "name": "brain-games-imleykin",
+  "version": "1.0.0",
+  "description": "First project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Ilya Leykin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "cross-env": "^5.2.0"
+  }
+}
