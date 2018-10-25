@@ -9,3 +9,4 @@ const getUserName = () => {
 };
 
 export default getUserName;
+const getUserAnswer = () => readlineSync.question('Your answer: ');
