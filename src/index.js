@@ -8,5 +8,6 @@ const getUserName = () => {
   return name;
 };
 
-export default getUserName;
 const getUserAnswer = () => readlineSync.question('Your answer: ');
+
+export { showWelcomeMessage, getUserName, getUserAnswer };
