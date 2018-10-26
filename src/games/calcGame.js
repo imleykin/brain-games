@@ -1,6 +1,6 @@
 import { sample } from 'lodash';
 import startGame from '../startGame';
-import { getRandomInteger } from '..';
+import { getRandomInteger, getQuestionAndAnswer } from '..';
 
 const operations = {
   '+': (a, b) => a + b,
@@ -20,13 +20,7 @@ const getCorrectAnswer = (expression) => {
   return operations[operation](+firstNumber, +secondNumber).toString();
 };
 
-const calcGame = () => ({
+export default () => startGame({
   description: 'What is the result of the expression?',
-  getQuiz: () => {
-    const question = getQuestion();
-    const answer = getCorrectAnswer(question);
-    return { question, answer };
-  },
+  getQuiz: () => getQuestionAndAnswer(getQuestion, getCorrectAnswer),
 });
-
-export default () => startGame(calcGame());

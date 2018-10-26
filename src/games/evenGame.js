@@ -1,16 +1,10 @@
 import startGame from '../startGame';
-import { getRandomInteger } from '..';
+import { getRandomInteger, getQuestionAndAnswer } from '..';
 
 const getQuestion = () => getRandomInteger();
 const getCorrectAnswer = num => (num % 2 === 0 ? 'yes' : 'no');
 
-const evenGame = () => ({
+export default () => startGame({
   description: 'Answer "yes" if number even otherwise answer "no".',
-  getQuiz: () => {
-    const question = getQuestion();
-    const answer = getCorrectAnswer(question);
-    return { question, answer };
-  },
+  getQuiz: () => getQuestionAndAnswer(getQuestion, getCorrectAnswer),
 });
-
-export default () => startGame(evenGame());
