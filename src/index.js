@@ -10,4 +10,8 @@ const getUserName = () => {
 
 const getUserAnswer = () => readlineSync.question('Your answer: ');
 
-export { showWelcomeMessage, getUserName, getUserAnswer };
+const getRandomInteger = () => Math.floor(Math.random() * 100);
+
+export {
+  showWelcomeMessage, getUserName, getUserAnswer, getRandomInteger,
+};

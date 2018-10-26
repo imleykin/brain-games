@@ -1,6 +1,7 @@
 import startGame from '../startGame';
+import { getRandomInteger } from '..';
 
-const getQuestion = () => Math.floor(Math.random() * 100);
+const getQuestion = () => getRandomInteger();
 const getCorrectAnswer = num => (num % 2 === 0 ? 'yes' : 'no');
 
 const evenGame = () => ({
