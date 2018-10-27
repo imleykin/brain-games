@@ -33,7 +33,7 @@ brain-calc
 
 [![asciicast](https://asciinema.org/a/BwjRhZTbQ1Md1QSDkr0IQsPNl.png)](https://asciinema.org/a/BwjRhZTbQ1Md1QSDkr0IQsPNl)
 
-2. **brain-gcd**
+3. **brain-gcd**
 
 Find the greatest common divisor of given numbers.
 
@@ -43,3 +43,25 @@ brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/Z7CUpZagIfV25hG4IfKYTsKQD.png)](https://asciinema.org/a/Z7CUpZagIfV25hG4IfKYTsKQD)
+
+4. **brain-progression**
+
+What number is missing in this progression?
+
+To play run this command:
+```
+brain-progression
+```
+
+[![asciicast](https://asciinema.org/a/mY0BcL4bP70tAcOqcDR6yTh7Y.png)](https://asciinema.org/a/mY0BcL4bP70tAcOqcDR6yTh7Y)
+
+5. **brain-prime**
+
+Answer "yes" if given number is prime. Otherwise answer "no".
+
+To play run this command:
+```
+brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/UimU6ieXa3ICgGsyMWHXv1ciW.png)](https://asciinema.org/a/UimU6ieXa3ICgGsyMWHXv1ciW)
