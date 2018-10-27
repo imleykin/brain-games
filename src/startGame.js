@@ -1,14 +1,20 @@
-import { showWelcomeMessage, getUserName, getUserAnswer } from '.';
+import readlineSync from 'readline-sync';
 
-const startGame = (game, numberOfRounds = 3) => {
-  const { description, getQuiz } = game;
+const getUserName = () => {
+  const name = readlineSync.question('May I have your name: ');
+  console.log(`Hello, ${name}! \n`);
+  return name;
+};
 
-  showWelcomeMessage();
+const getUserAnswer = () => readlineSync.question('Your answer: ');
+
+const startGame = (description, getGameRound, numberOfRounds = 3) => {
+  console.log('Welcome to the Brain Games! \n');
   console.log(`${description}\n`);
   const userName = getUserName();
 
   for (let currentRound = 1; currentRound <= numberOfRounds; currentRound += 1) {
-    const { question, answer: correctAnswer } = getQuiz();
+    const { question, answer: correctAnswer } = getGameRound();
     console.log(question);
     const userAnswer = getUserAnswer();
 

@@ -1,10 +1,13 @@
 import startGame from '../startGame';
-import { getRandomInteger, getQuestionAndAnswer } from '..';
+import { getRandomInteger, MIN_NUM, MAX_NUM } from '../utils';
 
-const getQuestion = () => getRandomInteger();
-const getCorrectAnswer = num => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = num => num % 2 === 0;
 
-export default () => startGame({
-  description: 'Answer "yes" if number even otherwise answer "no".',
-  getQuiz: () => getQuestionAndAnswer(getQuestion, getCorrectAnswer),
-});
+const getGameRound = () => {
+  const question = getRandomInteger(MIN_NUM, MAX_NUM);
+  const answer = isEven(question) ? 'yes' : 'no';
+  return { question, answer };
+};
+
+export default () => startGame('Answer "yes" if number even otherwise answer "no".',
+  getGameRound);
