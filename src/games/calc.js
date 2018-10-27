@@ -1,6 +1,10 @@
 import { sample } from 'lodash';
 import startGame from '../startGame';
-import { getRandomInteger, MIN_NUM, MAX_NUM } from '../utils';
+import getRandomInteger from '../getRandomInteger';
+
+const gameDescription = 'What is the result of the expression?';
+const minForRandom = 0;
+const maxForRandom = 101;
 
 const operations = {
   '+': (a, b) => a + b,
@@ -9,13 +13,12 @@ const operations = {
 };
 
 const getGameRound = () => {
-  const firstNumber = getRandomInteger(MIN_NUM, MAX_NUM);
-  const secondNumber = getRandomInteger(MIN_NUM, MAX_NUM);
+  const firstNumber = getRandomInteger(minForRandom, maxForRandom);
+  const secondNumber = getRandomInteger(minForRandom, maxForRandom);
   const operation = sample(Object.keys(operations));
   const question = `${firstNumber} ${operation} ${secondNumber}`;
   const answer = operations[operation](firstNumber, secondNumber).toString();
   return { question, answer };
 };
 
-export default () => startGame('What is the result of the expression?',
-  getGameRound);
+export default () => startGame(gameDescription, getGameRound);

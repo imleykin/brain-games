@@ -1,15 +1,17 @@
 import startGame from '../startGame';
-import { getRandomInteger, MIN_NUM, MAX_NUM } from '../utils';
+import getRandomInteger from '../getRandomInteger';
 
-const PROGRESSION_LENGTH = 10;
-
+const gameDescription = 'What number is missing in this progression?';
+const progressionLength = 10;
+const minForRandom = 0;
+const maxForRandom = 101;
 
 const getGameRound = () => {
-  const progressionStart = getRandomInteger(MIN_NUM, MAX_NUM);
-  const progressionStep = getRandomInteger(MIN_NUM, MAX_NUM);
-  const questionIndex = getRandomInteger(0, PROGRESSION_LENGTH);
+  const progressionStart = getRandomInteger(minForRandom, maxForRandom);
+  const progressionStep = getRandomInteger(minForRandom, maxForRandom);
+  const questionIndex = getRandomInteger(0, progressionLength);
 
-  const progression = new Array(PROGRESSION_LENGTH)
+  const progression = new Array(progressionLength)
     .fill(progressionStart)
     .map((value, index) => value + progressionStep * index);
 
@@ -25,5 +27,4 @@ const getGameRound = () => {
   return { question, answer };
 };
 
-export default () => startGame('What number is missing in this progression?',
-  getGameRound);
+export default () => startGame(gameDescription, getGameRound);
