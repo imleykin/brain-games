@@ -1,6 +1,6 @@
 import { sample } from 'lodash';
 import startGame from '../startGame';
-import getRandomInteger from '../getRandomInteger';
+import { getRandomInteger } from '../utils';
 
 const gameDescription = 'What is the result of the expression?';
 const minForRandom = 0;

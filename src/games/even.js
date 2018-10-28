@@ -1,5 +1,5 @@
 import startGame from '../startGame';
-import getRandomInteger from '../getRandomInteger';
+import { getRandomInteger } from '../utils';
 
 const gameDescription = 'Answer "yes" if number even otherwise answer "no".';
 const minForRandom = 0;
