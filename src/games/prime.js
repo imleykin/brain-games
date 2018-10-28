@@ -6,7 +6,7 @@ const minForRandom = 0;
 const maxForRandom = 101;
 
 const isPrime = (num) => {
-  if (num === 0 || num === 1) {
+  if (num < 2) {
     return false;
   }
 
