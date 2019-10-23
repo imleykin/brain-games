@@ -1,12 +1,13 @@
-Brain-games
-=====================
-[![Build Status](https://travis-ci.org/imleykin/project-lvl1-s364.svg?branch=master)](https://travis-ci.org/imleykin/project-lvl1-s364) [![Maintainability](https://api.codeclimate.com/v1/badges/c7ffb4bcb1d80ff2d392/maintainability)](https://codeclimate.com/github/imleykin/project-lvl1-s364/maintainability)
+# Brain-games
+
+[![Build Status](https://travis-ci.org/imleykin/brain-games.svg?branch=master)](https://travis-ci.org/imleykin/brain-games) [![Maintainability](https://api.codeclimate.com/v1/badges/c7ffb4bcb1d80ff2d392/maintainability)](https://codeclimate.com/github/imleykin/project-lvl1-s364/maintainability)
 
 Brain games will help you train mental skills.
 
 **Installation**
 
 To install run this command:
+
 ```
 sudo npm install -g brain-games-imleykin
 ```
@@ -16,6 +17,7 @@ sudo npm install -g brain-games-imleykin
 Answer "yes" if number even otherwise answer "no".
 
 To play run this command:
+
 ```
 brain-even
 ```
@@ -27,6 +29,7 @@ brain-even
 What is the result of the expression?
 
 To play run this command:
+
 ```
 brain-calc
 ```
@@ -38,6 +41,7 @@ brain-calc
 Find the greatest common divisor of given numbers.
 
 To play run this command:
+
 ```
 brain-gcd
 ```
@@ -49,6 +53,7 @@ brain-gcd
 What number is missing in this progression?
 
 To play run this command:
+
 ```
 brain-progression
 ```
@@ -60,6 +65,7 @@ brain-progression
 Answer "yes" if given number is prime. Otherwise answer "no".
 
 To play run this command:
+
 ```
 brain-prime
 ```
