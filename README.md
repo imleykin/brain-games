@@ -22,7 +22,7 @@ To play run this command:
 brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/S0YLwjKLj06MUoglscVxQIs9k.png)](https://asciinema.org/a/S0YLwjKLj06MUoglscVxQIs9k)
+[![asciicast](https://asciinema.org/a/276551.svg)](https://asciinema.org/a/276551)
 
 2. **brain-calc**
 
