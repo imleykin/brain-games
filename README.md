@@ -34,7 +34,7 @@ To play run this command:
 brain-calc
 ```
 
-[![asciicast](https://asciinema.org/a/BwjRhZTbQ1Md1QSDkr0IQsPNl.png)](https://asciinema.org/a/BwjRhZTbQ1Md1QSDkr0IQsPNl)
+[![asciicast](https://asciinema.org/a/r6pC1TmAmirCoyG7IKfJtG3a1.svg)](https://asciinema.org/a/r6pC1TmAmirCoyG7IKfJtG3a1)
 
 3. **brain-gcd**
 
@@ -46,7 +46,7 @@ To play run this command:
 brain-gcd
 ```
 
-[![asciicast](https://asciinema.org/a/Z7CUpZagIfV25hG4IfKYTsKQD.png)](https://asciinema.org/a/Z7CUpZagIfV25hG4IfKYTsKQD)
+[![asciicast](https://asciinema.org/a/a0zyALFvyukEYtF5lDGzH3tio.svg)](https://asciinema.org/a/a0zyALFvyukEYtF5lDGzH3tio)
 
 4. **brain-progression**
 
@@ -58,7 +58,7 @@ To play run this command:
 brain-progression
 ```
 
-[![asciicast](https://asciinema.org/a/mY0BcL4bP70tAcOqcDR6yTh7Y.png)](https://asciinema.org/a/mY0BcL4bP70tAcOqcDR6yTh7Y)
+[![asciicast](https://asciinema.org/a/WQAz5E0d1zSeBZkjYdVClia50.svg)](https://asciinema.org/a/WQAz5E0d1zSeBZkjYdVClia50)
 
 5. **brain-prime**
 
@@ -70,4 +70,4 @@ To play run this command:
 brain-prime
 ```
 
-[![asciicast](https://asciinema.org/a/UimU6ieXa3ICgGsyMWHXv1ciW.png)](https://asciinema.org/a/UimU6ieXa3ICgGsyMWHXv1ciW)
+[![asciicast](https://asciinema.org/a/p5Dg7cSOjY7Fxh1kYvp6Td9Nw.svg)](https://asciinema.org/a/p5Dg7cSOjY7Fxh1kYvp6Td9Nw)
